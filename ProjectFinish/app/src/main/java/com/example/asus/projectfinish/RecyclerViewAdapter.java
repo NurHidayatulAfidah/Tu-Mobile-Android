@@ -19,8 +19,6 @@ import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
-
-
     private Context mContext;
     private List<Barang> mData;
 
