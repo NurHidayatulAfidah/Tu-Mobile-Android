@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="com.example.asus.projectfinish.ToolBarActivity">
-    
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview_id"
+        android:id="@+id/list"
         android:layout_width="match_parent"
 
         android:layout_height="match_parent"
@@ -22,49 +19,49 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
-            android:id="@+id/relLayoutTopBar"
+    <RelativeLayout
+        android:id="@+id/relLayoutTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true">
+
+        <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_alignParentTop="true">
+            android:layout_height="wrap_content">
 
-            <android.support.design.widget.AppBarLayout
+            <android.support.v7.widget.Toolbar
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbarTop">
 
-                <android.support.v7.widget.Toolbar
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/toolbarTop">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
 
-                </android.support.v7.widget.Toolbar>
-            </android.support.design.widget.AppBarLayout>
-        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relLayoutMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relLayoutTopBar"
+        android:layout_above="@+id/relLayoutBottomBar">
 
-        <RelativeLayout
-            android:id="@+id/relLayoutMiddle"
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayoutBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomnavMenu"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/relLayoutTopBar"
-            android:layout_above="@+id/relLayoutBottomBar">
+            android:background="@drawable/baseline_bottom"
+            app:menu="@menu/bottom_navigation_menu">
 
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/relLayoutBottomBar"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_alignParentBottom="true">
-
-            <android.support.design.widget.BottomNavigationView
-                android:id="@+id/bottomnavMenu"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/baseline_bottom"
-                app:menu="@menu/bottom_navigation_menu">
-
-            </android.support.design.widget.BottomNavigationView>
-        </RelativeLayout>
+        </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>
