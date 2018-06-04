@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -72,4 +72,4 @@ public class JSONParser {
 		return jObj;
 
 	}
-}
+}*/

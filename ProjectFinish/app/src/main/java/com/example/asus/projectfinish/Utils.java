@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -20,4 +20,4 @@ public class Utils {
         }
         catch(Exception ex){}
     }
-}
+}*/

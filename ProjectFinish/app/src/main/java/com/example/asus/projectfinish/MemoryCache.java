@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.lang.ref.SoftReference;
 import java.util.Collections;
@@ -23,4 +23,4 @@ public class MemoryCache {
     public void clear() {
         cache.clear();
     }
-}
+}*/

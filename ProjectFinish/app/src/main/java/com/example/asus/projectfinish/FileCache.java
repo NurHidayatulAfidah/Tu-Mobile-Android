@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.io.File;
 import android.content.Context;
@@ -35,4 +35,4 @@ public class FileCache {
             f.delete();
     }
 
-}
+}*/

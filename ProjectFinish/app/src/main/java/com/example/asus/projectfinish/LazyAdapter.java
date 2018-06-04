@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -56,4 +56,4 @@ public class LazyAdapter extends BaseAdapter {
 	        imageLoader.DisplayImage(berita.get(TampilkanGambarActivity.in_gambar), gambar);
 	        return vi;
     }
-}
+}*/

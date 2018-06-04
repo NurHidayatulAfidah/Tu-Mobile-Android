@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -61,4 +61,4 @@ public class TampilkanGambarActivity extends Activity {
         adapter=new LazyAdapter(this, data_map);        
         list.setAdapter(adapter);
     }
-}
+}*/

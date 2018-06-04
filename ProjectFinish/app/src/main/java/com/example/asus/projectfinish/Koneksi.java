@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 public class Koneksi {
 	
@@ -8,4 +8,4 @@ public class Koneksi {
 		return isi;
 	}
 
-}
+}*/

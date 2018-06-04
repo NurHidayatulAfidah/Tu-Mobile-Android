@@ -39,10 +39,10 @@ public class HomeActivity extends AppCompatActivity {
         lstBarang.add(new Barang("Aqua Kemasan 600 ml", "Rp. 40.000", R.drawable.aqua_600ml));
         lstBarang.add(new Barang("LPG 3kg", "Rp. 16.000", R.drawable.lpg));;
 
-        RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
+       /* RecyclerView myrv = (RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(this, lstBarang);
         myrv.setLayoutManager(new GridLayoutManager(this, 2));
-        myrv.setAdapter(myAdapter);
+        myrv.setAdapter(myAdapter);*/
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomnavMenu);

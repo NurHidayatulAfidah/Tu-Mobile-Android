@@ -1,4 +1,4 @@
-package tampil.pckg.dlmbg.gambar;
+/*package tampil.pckg.dlmbg.gambar;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -168,4 +168,4 @@ public class ImageLoader {
         fileCache.clear();
     }
 
-}
+}*/
