@@ -40,7 +40,6 @@ public class ProfilActivity extends AppCompatActivity {
     public static final String TAG_ALAMAT = "alamat";
     public static final String TAG_NO_HP = "no_hp";
 
-
     String tag_json_obj = "json_obj_req";
     ConnectivityManager conMgr;
 
@@ -59,12 +58,13 @@ public class ProfilActivity extends AppCompatActivity {
         txt_alamat = (TextView)findViewById(R.id.alamat);
         txt_no_hp = (TextView)findViewById(R.id.no_hp);
         btn_logout = (Button)findViewById(R.id.btn_logout);
+        btn_edit = (Button)findViewById(R.id.btn_edit);
 
         sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         id = sharedpreferences.getString(TAG_ID, null);
 
-        txt_id = (TextView)findViewById(R.id.id);
-        txt_id.setText(id);
+        /*txt_id = (TextView)findViewById(R.id.id);
+        txt_id.setText(id);*/
 
         tampilData(id);
         /*conMgr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -125,6 +125,16 @@ public class ProfilActivity extends AppCompatActivity {
                 editor.commit();
 
                 Intent intent = new Intent(ProfilActivity.this, Login.class);
+                finish();
+                startActivity(intent);
+            }
+        });
+
+        btn_edit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent intent = new Intent(ProfilActivity.this, edit_profil.class);
                 finish();
                 startActivity(intent);
             }

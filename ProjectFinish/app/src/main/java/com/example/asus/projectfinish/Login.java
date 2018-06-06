@@ -218,10 +218,4 @@ public class Login extends AppCompatActivity {
         if (pDialog.isShowing())
             pDialog.dismiss();
     }
-
-    @Override
-    public void onBackPressed() {
-        intent = new Intent(Login.this, Login.class);
-        finish();
-    }
 }

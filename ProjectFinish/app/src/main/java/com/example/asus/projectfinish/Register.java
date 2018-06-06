@@ -144,7 +144,6 @@ public class Register extends AppCompatActivity {
                     } else {
                         Toast.makeText(getApplicationContext(),
                                 jObj.getString(TAG_MESSAGE), Toast.LENGTH_LONG).show();
-
                     }
                 } catch (JSONException e) {
                     // JSON error
