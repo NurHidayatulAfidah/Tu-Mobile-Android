@@ -78,7 +78,7 @@ public class Login extends AppCompatActivity {
         txt_username = (EditText) findViewById(R.id.username);
         txt_password = (EditText) findViewById(R.id.password);
 
-        // Cek session login jika TRUE maka langsung buka MainActivity
+        // Cek session login jika TRUE maka langsung buka home_main
         sharedpreferences = getSharedPreferences(my_shared_preferences, Context.MODE_PRIVATE);
         session = sharedpreferences.getBoolean(session_status, false);
         id = sharedpreferences.getString(TAG_ID, null);

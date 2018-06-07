@@ -24,7 +24,7 @@ public class InfoActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
                     case R.id.ic_home:
                         Intent intent1 = new Intent(InfoActivity.this, HomeActivity.class);

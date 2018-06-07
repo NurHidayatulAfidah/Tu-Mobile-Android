@@ -87,13 +87,7 @@ public class edit_profil extends AppCompatActivity {
                 String alamat = txt_alamat.getText().toString();
                 String no_hp = txt_no_hp.getText().toString();
 
-                if (conMgr.getActiveNetworkInfo() != null
-                        && conMgr.getActiveNetworkInfo().isAvailable()
-                        && conMgr.getActiveNetworkInfo().isConnected()) {
-                    simpan_update(idx, nama, alamat, no_hp);
-                } else {
-                    Toast.makeText(getApplicationContext(), "No Internet Connection", Toast.LENGTH_SHORT).show();
-                }
+                simpan_update(idx, nama, alamat, no_hp);
             }
         });
     }

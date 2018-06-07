@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relLayoutTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbarTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.AppBarLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lineLayoutMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relLayoutTopBar"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="30dp"
+                android:text="Id Pemesanan :"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/id_pemesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/textView8"
+                android:layout_toRightOf="@+id/textView8"
+                android:hint="id_pemesanan"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView8"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:text="Nama Barang :"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/id_pemesanan"
+                android:layout_alignStart="@+id/id_pemesanan"
+                android:layout_below="@+id/id_pemesanan"
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_alignBottom="@+id/textView9"
+                android:hint="nama_barang"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="15dp"
+                android:text="Jumlah Barang :"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="jumlah_barang"
+                android:inputType="number"
+                android:layout_alignBaseline="@id/textView10"
+                android:layout_alignBottom="@id/textView10"
+                android:layout_alignStart="@id/nama_barang"
+                android:layout_alignLeft="@id/nama_barang" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Pengiriman :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_below="@id/textView10"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@id/textView10"
+                android:layout_alignLeft="@id/textView10"/>
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/textView11"
+                android:layout_alignStart="@id/textView11"
+                android:layout_alignLeft="@id/textView11"
+                android:layout_marginTop="15dp"
+                android:hint="Alamat"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hrga Total :"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_below="@id/alamat"
+                android:layout_marginTop="15dp"
+                android:layout_alignStart="@id/textView10"
+                android:layout_alignLeft="@id/textView10"/>
+
+            <TextView
+                android:id="@+id/hrg_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="harga_total"
+                android:textSize="20dp"
+                android:layout_below="@id/alamat"
+                android:layout_marginTop="15dp"
+                android:layout_alignBaseline="@id/textView12"
+                android:layout_alignStart="@id/jumlah"
+                android:layout_alignLeft="@id/jumlah"/>
+
+            <Button
+                android:id="@+id/btn_pesan"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignEnd="@+id/alamat"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/alamat"
+                android:layout_marginBottom="45dp"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Pesan"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/id_brg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_pesan"
+                android:layout_alignBottom="@+id/btn_pesan"
+                android:layout_alignLeft="@+id/alamat"
+                android:layout_alignStart="@+id/alamat"
+                android:text="id brg" />
+
+            <TextView
+                android:id="@+id/hrg_satuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/id_brg"
+                android:layout_alignBottom="@+id/id_brg"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/id_brg"
+                android:layout_toRightOf="@+id/id_brg"
+                android:text="harga" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
